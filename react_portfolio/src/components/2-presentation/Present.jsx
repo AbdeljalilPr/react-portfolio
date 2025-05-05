@@ -1,7 +1,8 @@
 import React from 'react'
 import Lottie from 'lottie-react'
 import deveAnimation from '../../../static/animation/development.json'
-import './present.css'
+import './present.css';
+import cv from '../../../public/assets/resume/cv-qtr.pdf'
 function Presentation() {
   return (
 <section id='Presentation' className='hero flex'>
@@ -21,7 +22,7 @@ function Presentation() {
     <p>Software developer with a master's degree in computer science, specializing in machine learning. I have a great passion for programming and various technologies, and I always aspire to develop and gain experience.</p>
  </div>
  <div class='btn-sci flex'>
- <a href="#" class='btn'>Download CV</a>
+ <a href={cv} download="resume" class='btn'>Download CV</a>
  <div class='sci'>
    <a href="" ><i class='bx bxl-github'></i></a>
    <a href="" ><i class='bx bxl-linkedin'></i></a>

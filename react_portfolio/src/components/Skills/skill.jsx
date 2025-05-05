@@ -3,24 +3,24 @@ import './skill.css'
 /* eslint-no-irrugilar-white-spa */
 function Skills() {
   return (
-    <section id='Skills' className='skills-parent flex'> 
+    <section id='Skills' className='skills-parent'> 
       <h1 className='title'>My <span> Skills</span></h1>
       <p className='skills-desc flex'>
        this is some of programming langauges and framworks that we have previously worked with in real projects .
        we mentioned these langauges because they are the most popular langauges in web and mobile app development..   
       </p>
-      <div className="skills-list ">
+      <div className="skills-list flex">
         <div className="skill-item">
             <i class='bx bxl-html5'></i> 
         <span>Html</span>
         </div>
         <div className="skill-item">
         <i class='bx bxl-javascript'></i> 
-        <span>css</span>
+        <span>js</span>
         </div>
         <div className="skill-item">
         <i class='bx bxl-react'></i> 
-        <span>js</span>
+        <span>react</span>
         </div>
         <div className="skill-item">
         <i class='bx bxl-python'></i> 
@@ -29,10 +29,6 @@ function Skills() {
         <div className="skill-item">
         <i class='bx bxl-c-plus-plus'></i> 
         <span>c++</span>
-        </div>
-        <div className="skill-item">
-        <i class='bx bxl-react'></i> 
-        <span>react</span>
         </div>
         <div className="skill-item">
         <i class='bx bxl-nodejs'></i> 
@@ -63,8 +59,13 @@ function Skills() {
         <span>Postgresql</span>
         </div>
         <div className="skill-item">
-        <i class='bx bxl-mongodb'></i> 
-        <span>Mongodb</span>
+        <i class='bx bxl-git' ></i>
+        <span>git</span>
+        </div>
+        
+        <div className="skill-item">
+        <i class='bx bxl-github' ></i>
+        <span>github</span>
         </div>
       </div>
     </section>

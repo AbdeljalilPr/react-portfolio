@@ -21,7 +21,7 @@ function Header() {
       <div/>
     <nav>
       <ul className='links flex'>
-        <li><AnchorLink className='anchor-link' offset={50} href='#Main'><a href="#">Home</a></AnchorLink></li>
+        <li><AnchorLink className='anchor-link' offset={50} href='#Presentation'><a href="#">About</a></AnchorLink></li>
         <li><AnchorLink className='anchor-link' offset={50} href='#Services'><a href="">Services</a></AnchorLink></li>
         <li><AnchorLink className='anchor-link' offset={50} href='#Main'><a href="">Projects</a></AnchorLink></li>
         <li><AnchorLink className='anchor-link' offset={50} href='#Skills'><a href="">Skills</a></AnchorLink></li>
@@ -34,7 +34,7 @@ function Header() {
       //get value from local storage
       setTheme(localStorage.getItem("currentMode"));
     }} className='mode flex'>
-      {Theme==="dark" ? (<span className='icon-moon-o'></span>) : (<span className='q'></span>) }
+      {Theme==="dark" ? (<i class='bx bx-sun' ></i>) : (<span className='icon-moon-o'></span>) }
       
     </button>
          {/* <div className='fixed'>
