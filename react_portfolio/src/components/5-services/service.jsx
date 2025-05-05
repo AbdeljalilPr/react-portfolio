@@ -11,7 +11,7 @@ function Services() {
   return (
     <section id='Services' className='services '>
         <h1 className="title">My <span>Services</span></h1>
-        <p className='services-desc border'>
+        <p className='services-desc'>
         These are some of the technical fields I worked in, whether during university or after graduation
         through freelance work or graduation projects.   
       </p>

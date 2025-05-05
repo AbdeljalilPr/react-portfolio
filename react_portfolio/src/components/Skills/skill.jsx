@@ -5,7 +5,7 @@ function Skills() {
   return (
     <section id='Skills' className='skills-parent flex'> 
       <h1 className='title'>My <span> Skills</span></h1>
-      <p className='skills-desc border flex'>
+      <p className='skills-desc flex'>
        this is some of programming langauges and framworks that we have previously worked with in real projects .
        we mentioned these langauges because they are the most popular langauges in web and mobile app development..   
       </p>
