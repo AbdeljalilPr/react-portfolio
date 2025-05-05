@@ -1,0 +1,149 @@
+
+
+section.services{
+    flex-direction: column;
+    /* align-items: start; */
+
+    /* justify-content: center; */
+    gap:60px;
+}
+section.services .title{
+    font-size: 3rem;
+    color: var(--title);
+    margin-bottom: 1.5rem;
+    
+}
+section.services .services-desc{
+    color: var(--title);
+    width: 90%;
+    margin-bottom: 1.5 rem;
+}
+section.services .title span{
+    color: var(--main-color);
+}
+
+
+section .services-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.4rem;
+    margin-top: 1rem;
+}
+section .service-card{
+padding-right:10px ;
+padding-left: 10px;
+padding-top: 10px; 
+padding-bottom: 8px;
+border:1px solid var(--second-color);
+border-radius: .5rem;
+transition: 0.4s;
+background-color: var(--second-color);
+}
+
+
+.light section .service-card{
+    padding-right:10px ;
+    padding-left: 10px;
+    padding-top: 10px; 
+    border:1px solid #000;
+    border-radius: .5rem;
+    transition: 0.4s;
+    background-color: white;
+    }
+
+section .service-card:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+    
+    }
+    .light section .service-card:hover{
+        border-color: var(--main-color);
+        transform: scale(1.02);
+        color: #000;
+        }
+section .service-card .icon{
+display: flex;
+justify-content: space-between;
+align-items: center;
+/* color: var(--second-color); */
+}
+section .service-card:hover .icon :not(a i){
+    color: var(--main-color);
+    }
+section .service-card .icon i{
+        font-size: 3rem;
+        color: rgb(117, 114, 114);
+
+}
+section .service-card .icon a{
+display: inline-block;
+background: rgb(117, 114, 114);
+border-radius: 50%;
+padding: 1rem;
+font-size: 2px;
+transition: .5s;
+}
+.light section .service-card .icon a{
+    background: #000;
+    color: white;
+
+    }
+section .service-card:hover .icon a{
+    background-color: var(--main-color);
+    }
+section .service-card .icon a i{
+font-size: 1.5rem;
+color: var(--bg-color);
+transform: rotate(225deg);
+transition: .5s;
+}
+.light section .service-card .icon a i{
+    color: white;
+    
+    }
+section .service-card .icon a:hover i{
+    transform: rotate(180deg);
+    
+    }
+    
+section .service-card  h3{
+    font-size: 2rem;
+    /* margin: .5rem 0 2rem; */
+    transition: .5s;
+} 
+.light section .service-card  h3{
+    font-size: 2rem;
+    margin: .1rem 0 rem;
+    transition: .5s;
+    color: #000;
+} 
+section .service-card:hover  h3{
+    color: var(--main-color);
+} 
+
+.light section .service-card:hover  h3{
+    color: var(--main-color);
+} 
+
+.light section .service-card p{
+    color: #000
+} 
+
+
+
+
+@media(max-width:600px){
+
+    section.services.flex{
+        flex-direction: column;
+        gap: 2.64rem;
+        align-items: center;
+       }
+       section .services-container{
+         display: grid;
+         grid-template-columns: 1fr;
+         gap: 1.1rem;
+         margin-top: 6.4rem;
+     }
+       
+}

@@ -1,0 +1,77 @@
+section.flex{
+    
+    align-items: start;
+    gap: 1rem;
+    
+} 
+
+section.skills-parent{
+    flex-direction: column;
+    /* gap:60px; */
+}
+
+
+section.skills-parent .title{
+    color: var(--title);
+    font-size: 3rem;
+}
+
+section.skills-parent .title span{
+    color: var(--main-color);
+
+}
+section.skills-parent .skills-desc{
+    color: var(--title);
+    width: 90%;
+    margin-bottom: 1.5 rem;
+}
+section .skills-list{
+    /* display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: auto;
+    overflow: auto; */
+    justify-content: start;
+    flex-wrap: wrap;    
+    display: flex;
+    flex-grow: 1;
+    column-gap: 16px;
+    row-gap: 2rem;
+}
+section .skills-list{
+    
+}
+
+section .skill-item{
+background-color: var(--second-color);
+position: relative;
+align-items: center;
+justify-content: center;
+height: auto;
+display: flex;
+flex-direction: column;
+border-radius: 5px;
+}
+
+
+.light section .skill-item{
+    color: #000;
+    border: 1px solid #000;
+    background-color: white;
+}
+
+section .skill-item i{
+font-size: 8.5rem;
+transition: .5; 
+}
+
+section .skill-item:hover{
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+    
+.light section .skill-item:hover{
+    color: #000;
+    background-color:var(--main-color) ;
+    border: 1px solid #000;
+}

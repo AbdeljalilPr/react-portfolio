@@ -1,0 +1,222 @@
+/* last style of button and name */
+.btn-sci{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem ;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 3rem;
+    background:var(--main-color);
+    border: 0.2rem solid var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    font-weight: 500;
+    transition: .5s;
+}
+
+.light .btn{
+    display: inline-block;
+    padding: 1rem 3rem;
+    background:var(--main-color);
+    border: 0.2rem solid #000;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    font-weight: 500;
+    transition: .5s;
+}
+.btn:hover{
+background: transparent;
+color: var(--main-color);
+box-shadow: none;
+
+}
+.btn-sci .sci{
+    margin-left: 2rem;
+}
+.btn-sci .sci a{
+    display: inline-block;
+    padding: .8rem;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 1rem;
+    color: var(--main-color);
+    margin: 0 .8rem;
+    transition: .5s;
+}
+
+.light .btn-sci .sci a{
+    display: inline-block;
+    padding: .8rem;
+    border: .2rem solid #000;
+    border-radius: 50%;
+    font-size: 1rem;
+    color: #000;
+    margin: 0 .8rem;
+    transition: .5s;
+}
+.btn-sci .sci a:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+/* end style of name and icons */
+section .hero{
+    margin-top: 3rem
+}
+
+section .presentation .left-section{
+    flex-grow:1 ;
+}
+section.hero .icon-virified{
+    color: var(--blue);
+    font-size: 1.1rem;
+    margin-bottom: 1.3rem;
+
+}
+section .hero .parent-avatar .flex{
+align-items: end;
+gap: 0.6rem;
+}
+section .hero .avatar{
+    width: 88px;
+    border-radius: 50%;
+    border: 1px solid darkorange;
+    padding: 11px;
+    box-shadow: 1px 1px 40px rgba(203, 200, 200, 0.586) inset;
+
+}
+
+section .left-section h1{
+    font-size: 3.5rem;
+    color:white
+}
+
+.light section .left-section h1{
+    font-size: 3.5rem;
+    color: black;
+}
+
+section .left-section h2{
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.light section .left-section h2{
+    font-size: 2rem;
+    display: inline-block;
+}
+
+/* animation for software developer */
+
+section .left-section h2 span{
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: .07rem var(--main-color);
+}
+
+.light section .left-section h2 span{
+    color: #000;
+    -webkit-text-stroke: .07rem #000;
+}
+
+.light section .left-section h2 span{
+    color: #000;
+}
+
+section .left-section h2 span::before{
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    border-right: 1px solid transparent;
+    color: var(--main-color);
+    white-space:nowrap;
+    overflow: hidden;
+    animation: fill-text 4s linear infinite;
+}
+
+@keyframes fill-text{
+    10%,
+    100%{
+        width: 0;
+    }
+    70%,
+    90%{
+    width: 100%;
+    }
+}
+/* animation for software developer */
+
+.light section .left-section h2{
+    font-size: 1.2rem;
+    display: inline-block;
+    color: black;
+}
+.light section .left-section p{
+    color: black;
+}
+section .hero .subtitle{
+    color: var(--subtitle);
+    font-size: 0.9rem;
+    line-height: 22px;
+    margin-bottom: 32px;
+}
+section.hero .icons{
+    font-size: 1.2rem;
+    gap: 1.5rem;
+    color: var(--subtitle);
+}
+
+section.hero .icons .icon:hover{
+    font-size: 1.3rem;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #d4d4d8;
+}
+/* riht section */
+
+.animation{
+    width: 100%;
+    translate: 100px 55px;
+}
+
+
+
+@media(max-width:1100px){
+
+    .animation{display: none;}
+}
+
+
+@media(max-width:600px){
+
+    section.left-section{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin-top: 24px;
+    }
+    .flex{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    section.contact-us #email,
+    section.contact-us #message{
+        width: 100%;
+        margin-left: 0;
+        padding: 0.7rem 0;
+        margin-top: 1rem;
+    }
+    section.contact-us .submit{
+        width: 30%;
+        align-self: center;
+
+    }
+}
