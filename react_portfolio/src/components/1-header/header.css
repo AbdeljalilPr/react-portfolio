@@ -3,7 +3,8 @@ header.flex{
 justify-content: space-between;
 padding: 0 2.4rem;
 margin-top: 1.2rem;
-
+/* display: flex; */
+/* flex-direction: column; */
 }
 
 header nav{
@@ -81,14 +82,17 @@ header .icon-circle-with-cross:hover{
     rotate:180deg;
 }
 
-/* Modal */
-/* 
+/* Modal */ 
 header .fixed{
 position: fixed;
-inset: 0;
+/* inset: 0; */
+top: 2rem;
+right: 0;
+left: 0;
+display: flex;
 z-index: 0; 
 background-color: rgb(40,40,48,0.91);
-} */
+}
 @keyframes modelamove{
     0% {scale:0 ;}
     60% {scale:1.2 ;}
@@ -96,20 +100,45 @@ background-color: rgb(40,40,48,0.91);
 } 
 header .fixed ul.modal{
     animation: modelamove;
-    width:85% ;
+    width:100%;
+    /* margin-left:auto ;
+    margin-right:auto ; */
+    margin-top: 2rem;
+    align-items: center;
+    /* border-radius: 1rem; */
+    padding: 1rem 2rem;
+    background-color: var(--main-color);
+    color: var(--title);
+    display: none; 
+}
+
+header .fixed ul.modal li{
+    text-align: center;
+    /* display: none; */
+}
+
+
+
+.light header .fixed ul.modal{
+    animation: modelamove;
+    width:100%;
     margin-left:auto ;
     margin-right:auto ;
     margin-top: 2rem;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     padding: 1rem 2rem;
-    background-color: var(--secondary);
+    background-color: var(--main-color);
+    color: #000;
     display: none;
 }
+
 
 header .fixed ul.modal li{
     border-bottom: 1px solid var(--border);
     padding-bottom:0.77rem ;
     padding-top:0.5rem;
+    align-items: center;
+    flex-direction: column;
 }
 
 header .fixed ul.modal li:first-child{
@@ -124,14 +153,13 @@ header .fixed ul.modal li:last-child{
 }
 
 header .fixed ul.modal li a{
-    font-size: 1rem;
+    font-size: 3rem;
 }
 
 
 @media (max-width:700px) {
     header.flex nav{display: none;}
     header button.menu{
-        display: block;
-
+        display: none;
     }
 }

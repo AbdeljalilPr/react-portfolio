@@ -193,6 +193,15 @@ color: var(--main-color);
    gap: 2.64rem;
    align-items: center;
   }
+  main section.left-section.flex .title {
+    display: flex;
+    justify-content: center;
+}
+
+main section.left-section.flex .title span{
+    padding-left: 10px;
+}
+
   main section.left-section.flex{
     flex-direction: row;
     flex-wrap: wrap;
@@ -212,6 +221,35 @@ main section.right-section.flex{
     overflow: hidden;
     margin-top: 6.4rem;
 }
-  
+  /* card stilyng */
 
+.card{
+    border: 1px solid var(--second-color);
+    border-radius: 5px;
+    transition: 0.3s;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+}
+  
+.card .project-descreption{
+    visibility: hidden
+}
+
+/* scroll-bat */
+
+main section.right-section::-webkit-scrollbar{
+    width: 1rem;
+    height: 1rem;
+    background-color: blue;
+    }
+    main section.right-section::-webkit-scrollbar-thumb{
+        background-color: var(--main-color);
+        border-radius: 2px;
+    }
+    main section.right-section:hover::-webkit-scrollbar-thumb{
+        background-color: var(--main-color);
+        border-radius: 2px;
+    }
+    
   }

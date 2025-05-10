@@ -147,8 +147,9 @@ button:active{
 
 @media (max-width:600px) {
   .container{
+  width: 100%;
   width: 98%;
-  padding: 0 1.7rem;
+  padding: 0 0.2rem;
   }
 
   .scroll2top:hover{

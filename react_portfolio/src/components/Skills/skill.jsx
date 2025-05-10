@@ -3,14 +3,14 @@ import './skill.css'
 /* eslint-no-irrugilar-white-spa */
 function Skills() {
   return (
-    <section id='Skills' className='skills-parent'> 
+    <section id='Skills' className='skills-parent border'> 
       <h1 className='title'>My <span> Skills</span></h1>
-      <p className='skills-desc flex'>
+      <p className='skills-desc flex border'>
        this is some of programming langauges and framworks that we have previously worked with in real projects .
-       we mentioned these langauges because they are the most popular langauges in web and mobile app development..   
-      </p>
-      <div className="skills-list flex">
-        <div className="skill-item">
+       <span>we mentioned these langauges because they are the most popular langauges in web and mobile app development..   
+       </span>  </p>
+      <div className="skills-list flex border">
+        <div id="nond" className="skill-item border">
             <i class='bx bxl-html5'></i> 
         <span>Html</span>
         </div>
@@ -34,7 +34,7 @@ function Skills() {
         <i class='bx bxl-nodejs'></i> 
         <span>node</span>
         </div>
-        <div className="skill-item">
+        <div id="nond" className="skill-item">
         <i class='bx bxl-php'></i> 
         <span>php</span>
         </div>
@@ -46,11 +46,11 @@ function Skills() {
         <i class='bx bxl-flutter'></i> 
         <span>Flutter</span>
         </div>
-        <div className="skill-item">
+        <div id="nond" className="skill-item">
         <i class='bx bxl-go-lang'></i> 
         <span>Go-lang</span>
         </div>
-        <div className="skill-item">
+        <div id="nond" className="skill-item">
         <i class='bx bxl-mongodb'></i> 
         <span>Mongodb</span>
         </div>
@@ -58,12 +58,12 @@ function Skills() {
         <i class='bx bxl-postgresql'></i> 
         <span>Postgresql</span>
         </div>
-        <div className="skill-item">
+        <div id="nond" className="skill-item">
         <i class='bx bxl-git' ></i>
         <span>git</span>
         </div>
         
-        <div className="skill-item">
+        <div id="nond" className="skill-item">
         <i class='bx bxl-github' ></i>
         <span>github</span>
         </div>

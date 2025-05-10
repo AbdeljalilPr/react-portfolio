@@ -30,7 +30,7 @@ const handelFiltration=(projectcategorie) => {
         </p>
             
       {/* first button all project */}
-    <button onClick={()=>{setcurrrentButton('all')}}
+    <button onClick={()=>{handelFiltration('all')}}
      className={currrentButton==='all' ? 'active' : null }>All Projects</button>
     {/* second button react project */}
     <button onClick={()=>{handelFiltration('react')}} className={currrentButton==='react' ? 'active' : null }>React Projects</button>
@@ -43,7 +43,7 @@ const handelFiltration=(projectcategorie) => {
    
       </section>
       {/* the right section */}
-      <section  className='right-section flex '>
+      <section  className='right-section flex border '>
      
          {allproject.map((project,index)=>{
         return(

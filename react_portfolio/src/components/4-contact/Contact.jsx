@@ -8,17 +8,17 @@ function Contact() {
     const [state, handleSubmit] = useForm("xwpovnlj");
     
   return (
-    <section id='Contact' className='contact-us'>
-        <h1 className="title">
+    <section id='Contact' className='contact-us '>
+        <h1 className="title ">
             Contact <span>us</span> 
             <span className="email-icon"></span>
         </h1>
-        <p className='subtitle'>
-            Contact us for more information and get notified when i publish somthing new.
+        <p className='subtitle '>
+            Contact us for more information and if you want to collaborate .
         </p>
-       <div style={{justifyContent:"space-between"}} className="flex">
+       <div style={{justifyContent:"space-between"}} className="contact-details">
         <form onSubmit={handleSubmit} action="">
-        <div className='flex'>
+        <div className='flex '>
             <label htmlFor='id'>Emial Aderess:</label>
             <input type="email"  name='email' id='email'/>
             <ValidationError 
@@ -27,7 +27,7 @@ function Contact() {
                 errors={state.errors}
             />
         </div>
-        <div style={{marginTop:"24px"}} className='flex' >
+        <div style={{marginTop:"24px", width:'width: 112%;'}} className='flex' >
         <label htmlFor='id'>Your Message:</label>
         <textarea required name="message" id="message"></textarea>
             <ValidationError 

@@ -37,18 +37,18 @@ function Header() {
       {Theme==="dark" ? (<i class='bx bx-sun' ></i>) : (<span className='icon-moon-o'></span>) }
       
     </button>
-         {/* <div className='fixed'>
-            <ul className='mo'>
+            <div className='fixed'>
+            <ul className='modal'>
               <li>
                 <button className='icon-circle-with-cross'/>
               </li>
-              <li><a href=""></a>About</li>
-              <li><a href=""></a>Articles</li>
+              <li><a href=""></a>About Me</li>
+              <li><a href=""></a>Services</li>
               <li><a href=""></a>Projects</li>
-              <li><a href=""></a>Speacing</li>
-              <li><a href=""></a>Uses</li>
+              <li><a href=""></a>Skills</li>
+              <li><a href=""></a>Contact</li>
             </ul>
-       </div>  */}
+       </div> 
     </header>
 
 
