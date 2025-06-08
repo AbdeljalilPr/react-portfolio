@@ -43,14 +43,15 @@ const handelFiltration=(projectcategorie) => {
    
       </section>
       {/* the right section */}
-      <section  className='right-section flex border '>
+      <section  className='right-section flex  '>
      
          {allproject.map((project,index)=>{
         return(
        <article key={index} className='card'>
-       <img width={258} height={145} src={project.img} alt="czc" srcset="" />
+       <img src={project.img} alt="czc" srcset="" />
        <div className="project-details" >
            <h1 className="project-title">{project.project}
+            <span>{project.spn}</span>
            </h1>
            <p className="project-descreption">{project.descreption}</p>
            <div className="icons flex ">

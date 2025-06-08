@@ -91,18 +91,14 @@ main section.right-section.flex{
     margin-top: 6.4rem;
 }
 main section.right-section::-webkit-scrollbar{
-width: 4px;
+width: 0.7rem;
+height: 1rem;
 background-color: transparent;
 }
 main section.right-section::-webkit-scrollbar-thumb{
-    background-color: transparent;
+    background-color: var(--main-color);
     border-radius: 2px;
 }
-main section.right-section:hover::-webkit-scrollbar-thumb{
-    background-color: #c5c4c4;
-    border-radius: 2px;
-}
-
 .card{
     border: 1px solid var(--second-color);
     border-radius: 5px;
@@ -122,12 +118,13 @@ main section.right-section:hover::-webkit-scrollbar-thumb{
 .card{
     border-radius: 5px;
     display: flex;
-    border: 1px solid var(--second-color);
+    border: 1px solid var(--main-color);
     transition: 0.3s;
     background-image: linear-gradient(
         rgba(255,255,255,0.05),
         rgba(255,255,255,0.05),
     );
+    margin-right: 3px;
 }
 .light .card,.light .card:hover{
     border: 1px solid #000;
@@ -142,6 +139,14 @@ main section.right-section:hover::-webkit-scrollbar-thumb{
     color: var(--title);
 
 }
+
+.card img{
+    width: 258px;
+    height: 145px;
+    border-radius: 5px;
+}
+
+
 
 
 .card .project-descreption{
@@ -193,6 +198,15 @@ color: var(--main-color);
    gap: 2.64rem;
    align-items: center;
   }
+  main section.right-section.flex {
+    display: grid
+;
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+    height: 46rem;
+    overflow: auto;
+    margin-top: 0.4rem;
+}   
   main section.left-section.flex .title {
     display: flex;
     justify-content: center;
@@ -214,42 +228,68 @@ main section.left-section.flex .title span{
     font-size: 0.9rem;
 }
 main section.right-section.flex{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.1rem;
-    height: 45rem;
-    overflow: hidden;
-    margin-top: 6.4rem;
+        main section.right-section.flex {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.1rem;
+        height: 46rem;
+        overflow: hidden;
+        margin-top: 0.4rem;
+    }
 }
   /* card stilyng */
 
 .card{
-    border: 1px solid var(--second-color);
+    border: 1px solid var(--main-color);
     border-radius: 5px;
     transition: 0.3s;
-    width: 260px;
+    width: 280px;
     display: flex;
     flex-direction: column;
+    margin-right: 3px;
 }
   
 .card .project-descreption{
-    visibility: hidden
+     display: none
+}
+.card .project-title{
+    color: var(--title);
+    font-size: 1.3rem ;
+    padding-bottom: 0rem;
 }
 
+.card .project-title span{
+    visibility: hidden;
+}
+ 
+.card .project-details .icons {
+    justify-content: space-between;
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1px;
+}
+
+.card img {
+    width: 278px;
+    height: 139px;
+    border-radius: 5px;
+}
 /* scroll-bat */
 
 main section.right-section::-webkit-scrollbar{
-    width: 1rem;
-    height: 1rem;
-    background-color: blue;
+    width: 0.5rem;
+    height: 12rem;
     }
     main section.right-section::-webkit-scrollbar-thumb{
         background-color: var(--main-color);
-        border-radius: 2px;
+        border-radius: 5px;
+        
     }
     main section.right-section:hover::-webkit-scrollbar-thumb{
         background-color: var(--main-color);
-        border-radius: 2px;
+        border-radius: 5px;
+        
     }
     
   }

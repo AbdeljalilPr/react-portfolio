@@ -157,5 +157,12 @@ button:active{
     height: 2.2rem;
     opacity: 0.5;
    }
+
+.divider{
+  display: flex;
+  border-bottom: 4rem solid var(--border);
+  margin: 2.8rem 0;
+  width: 100%;
   
+}  
   }

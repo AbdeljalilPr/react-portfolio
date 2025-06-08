@@ -20,6 +20,7 @@ section.services .services-desc{
 }
 section.services .title span{
     color: var(--main-color);
+    padding-left: 10px;
 }
 
 
@@ -34,7 +35,7 @@ padding-right:10px ;
 padding-left: 10px;
 padding-top: 10px; 
 padding-bottom: 8px;
-border:1px solid var(--second-color);
+border:1px solid var(--main-color);
 border-radius: .5rem;
 transition: 0.4s;
 background-color: var(--second-color);
@@ -133,17 +134,107 @@ section .service-card:hover  h3{
 
 
 @media(max-width:600px){
-
+        
+section.services{
+    flex-direction: column;
+    align-items: center;
+    gap:60px;
+}
     section.services.flex{
         flex-direction: column;
         gap: 2.64rem;
         align-items: center;
        }
-       section .services-container{
-         display: grid;
-         grid-template-columns: 1fr;
-         gap: 1.1rem;
-         margin-top: 6.4rem;
+section .services-container{
+        display: flex;
+        gap: 2.1rem;
+        margin-top: 2.5rem;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
      }
+
+     
+section .service-card{
+padding-right: 17px;
+padding-left: 16px;
+padding-top: 10px; 
+padding-bottom: 8px;
+border:1px solid var(--main-color);
+border-radius: .5rem;
+transition: 0.4s;
+width: 91%;
+height: 12rem;
+
+background-color: var(--second-color);
+}
+
+
+section.services .title{
+    display: flex;
+    justify-content: center;
+}
+section.services .services-desc{
+    margin-bottom: 1.5 rem;
+    color: var(--title);
+    width: 100%;
+    margin-bottom: 1.5rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1.5 rem;
+    font-size: 17px;
+    padding-left: 18px;
+}
+
+section.services .services-desc span{
+  display: none;
+}
+section.services .title span{
+    color: var(--main-color);
+}
+section .service-card h3 {
+    font-size: 1.2rem;
+    /* margin: .5rem 0 2rem; */
+    transition: .5s;
+    margin-top: 6px;
+    margin-left: 9px;
+}
+
+section .service-card p {
+    margin-left: 9px;
+}
+
+section .service-card .icon {
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    /* color: var(--second-color); */
+    margin-bottom: 5px;
+}
+section .service-card .icon i {
+    font-size: 2rem;
+    color: rgb(117, 114, 114);
+}
+section .service-card .icon a {
+    display: inline-block;
+    background: rgb(117, 114, 114);
+    border-radius: 50%;
+    padding: 1rem;
+    /* font-size: 2px; */
+    width: 1rem;
+    height: 1rem;
+    transition: .5s;
+}
+section .service-card .icon a i {
+    font-size: 21px;
+    color: var(--bg-color);
+    transform: rotate(225deg);
+    transition: .5s;
+    margin: -12px;
+    /* margin-top: -9rem; */
+    padding-top: 6px;
+    padding-left: -12px;
+}
+       
        
 }

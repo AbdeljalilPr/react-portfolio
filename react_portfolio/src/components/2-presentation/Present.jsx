@@ -19,7 +19,7 @@ function Presentation() {
       <span></span>
     <span data-text='Developer'> Developer</span>
     </h2>
-    <p>Software developer with a master's degree in computer science, specializing in machine learning. I have a great passion for programming and various technologies, and I always aspire to develop and gain experience.</p>
+    <p>Software developer with a master's degree in computer science<span>specializing in machine learningI have a great passion for programming and various technologies, and I always aspire to develop and gain experience</span>  </p>
  </div>
  <div class='btn-sci flex'>
  <a href={cv} download="resume" class='btn'>Download CV</a>

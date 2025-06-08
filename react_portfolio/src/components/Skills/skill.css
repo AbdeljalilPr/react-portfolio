@@ -14,17 +14,21 @@ section.skills-parent{
 section.skills-parent .title{
     color: var(--title);
     font-size: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 section.skills-parent .title span{
     color: var(--main-color);
-
+    padding-left: 10px;
 }
 section.skills-parent .skills-desc{
     color: var(--title);
     width: 90%;
     margin-bottom: 1.5 rem;
+    padding-bottom: 2.4rem;
 }
+
+
 section .skills-list{
     /* display: grid;
     gap: 2rem;
@@ -35,7 +39,7 @@ section .skills-list{
     flex-wrap: wrap;    
     display: flex;
     flex-grow: 1;
-    column-gap: 1rem;
+    column-gap: 1.8rem;
     row-gap: 1.7rem;
 
 }
@@ -47,6 +51,7 @@ justify-content: center;
 height: auto;
 display: flex;
 flex-direction: column;
+border: 1px solid var(--main-color);
 border-radius: 5px;
 }
 

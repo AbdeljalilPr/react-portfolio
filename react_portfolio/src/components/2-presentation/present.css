@@ -180,7 +180,9 @@ section.hero .icons .icon:hover{
     color: #d4d4d8;
 }
 /* riht section */
+.right-section .animation{
 
+}
 .animation{
     width: 100%;
     translate: 100px 55px;
@@ -190,12 +192,18 @@ section.hero .icons .icon:hover{
 
 @media(max-width:1100px){
 
-    .animation{display: none;}
+    /* .animation{display: none;} */
 }
 
 
 @media(max-width:600px){
-
+        section.flex {
+        width: auto;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
     section.left-section{
         display: flex;
         flex-direction: column;
@@ -206,17 +214,67 @@ section.hero .icons .icon:hover{
         flex-direction: column;
         align-items: start;
     }
+    section .left-section h1 {
+        font-size: 2.1rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+        color: var(--subtitle);
+}
 
-    section.contact-us #email,
-    section.contact-us #message{
-        width: 100%;
-        margin-left: 0;
-        padding: 0.7rem 0;
-        margin-top: 1rem;
-    }
-    section.contact-us .submit{
-        width: 30%;
-        align-self: center;
+    .light section .left-section h1 {
+        font-size: 2.1rem;
+        display: flex;
+        justify-content: center;
+        color: black;
+}
+section .left-section h2 {
+        font-size: 1.2rem;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        /* display: inline-block; */
+}
 
+.light section .left-section h2 {
+        font-size: 1.2rem;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        /* display: inline-block; */
+}
+section .left-section h2 span {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: .07rem #34432c;
+}
+section .left-section p {
+                display: flex
+;
+        align-items: center;
+        justify-content: space-around;
+        width: 18rem;
+        margin-left: 0.7rem;
+        margin-top: 1.2rem;
     }
+
+
+section .left-section p span {
+        display: none;
+}
+.animation{
+    width: 117%;
+        translate: 100px 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -12rem;
+        margin-top: -3rem;
+}
+.btn-sci{
+
+    display: none;
+}
+
 }

@@ -13,7 +13,7 @@ function Services() {
         <h1 className="title">My <span>Services</span></h1>
         <p className='services-desc'>
         These are some of the technical fields I worked in, whether during university or after graduation
-        through freelance work or graduation projects.   
+        <span>through freelance work or graduation projects.</span>   
       </p>
       <div className='services-container '>    
          { myservices.map((service,index)=>{

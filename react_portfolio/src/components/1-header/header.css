@@ -157,9 +157,35 @@ header .fixed ul.modal li a{
 }
 
 
-@media (max-width:700px) {
+@media (max-width:600px) {
     header.flex nav{display: none;}
     header button.menu{
         display: none;
     }
+ header.flex{
+
+justify-content: space-between;
+        padding: 0 2.4rem;
+        margin-top: 1.2rem;
+        display: flex;
+        flex-direction: row;
+}
+
+header button.menu{
+    
+}
+
+header button{
+    font-size: 1.2rem;
+
+}
+ header button.mode i{
+    margin-left: 9px;
+    
+}
+ header button.mode span {
+        margin-left: 12px;
+    
+    
+}   
 }

@@ -3,6 +3,7 @@ import './header.css'
 import { useState } from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 function Header() {
+  const [showModal,setShowModel]=useState(false);
   const [Theme,setTheme]=useState(localStorage.getItem('currentMode') ?? 'dark');
   useEffect(()=>{
     if(Theme==='dark'){
@@ -17,7 +18,7 @@ function Header() {
   return (
    
     <header className='flex'>
-    <button className='icon-menu'><i class='bx bx-menu-alt-left' ></i></button>
+    <button onClick={()=>{setShowModel(true)}} className='icon-menu'><i class='bx bx-menu-alt-left' ></i></button>
       <div/>
     <nav>
       <ul className='links flex'>

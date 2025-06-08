@@ -8,7 +8,7 @@ function Contact() {
     const [state, handleSubmit] = useForm("xwpovnlj");
     
   return (
-    <section id='Contact' className='contact-us '>
+    <section id='Contact' className='contact-us'>
         <h1 className="title ">
             Contact <span>us</span> 
             <span className="email-icon"></span>
@@ -43,7 +43,7 @@ function Contact() {
             <Lottie loop={false} style={{height:37 ,backgroundColor:"#fff"}}animationData={doneAnimation}/>           
             Your message has been sent successfully.</p>)}
         </form>
-        <div className="contact-animation flex">
+        <div className="contact-animation">
          <Lottie style={{height:355}} animationData={emailAnimation}/>           
    
         </div>

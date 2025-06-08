@@ -3,14 +3,13 @@ import './skill.css'
 /* eslint-no-irrugilar-white-spa */
 function Skills() {
   return (
-    <section id='Skills' className='skills-parent border'> 
+    <section id='Skills' className='skills-parent '> 
       <h1 className='title'>My <span> Skills</span></h1>
-      <p className='skills-desc flex border'>
-       this is some of programming langauges and framworks that we have previously worked with in real projects .
-       <span>we mentioned these langauges because they are the most popular langauges in web and mobile app development..   
-       </span>  </p>
-      <div className="skills-list flex border">
-        <div id="nond" className="skill-item border">
+      <p className='skills-desc'>
+       this is some of programming langauges and framworks that we have previously worked with in real projects .<span>we mentioned these langauges because they are the most popular langauges in web and mobile app development..</span>
+         </p>
+      <div className="skills-list flex">
+        <div id="nond" className="skill-item">
             <i class='bx bxl-html5'></i> 
         <span>Html</span>
         </div>
